@@ -3,6 +3,7 @@
 import { nombre } from "./js/ex1.js";
 import { sum } from "./js/ex2.js";
 import { containsWord } from "./js/ex3.js";
+import { reverseWords } from "./js/ex4.js"
 import { printTerminal } from "./js/printData.js";
 
 //ex2
@@ -19,6 +20,11 @@ function app() {
   printTerminal(containsWord("abcnEglishsef")); //false
   printTerminal(containsWord("eNglisH")); //true
   printTerminal(containsWord("miau")); //false
+
+  //ex 4
+  printTerminal(reverseWords("Hello World")); //"World Hello" 
+  printTerminal(reverseWords("Hi There.")); // "There. Hi"
+  printTerminal(reverseWords("MiauGuau")); //"MiauGuau"
 }
 
 app();
